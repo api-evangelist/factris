@@ -1,7 +1,26 @@
 aid: factris
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/factris.png
 name: Factris
-description: Factris is a company surfaced as a portfolio company of speedinvest and added to the API
-  Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: Factris is a European fintech that provides invoice financing (factoring)
+  for small and medium-sized enterprises, converting unpaid B2B invoices into working
+  capital within 24 hours. Its services span invoice financing, debtor management and
+  collections, credit insurance, and credit-risk assessment, delivered through the
+  self-service FAB platform where customers upload invoices and track payments. Factris
+  operates across the Netherlands, Lithuania, and other European markets and has financed
+  over two billion euros in receivables. This profile was surfaced as a portfolio company
+  of Speedinvest and is being enriched in the API Evangelist network; Factris publishes
+  no public developer API or documentation at this time.
 url: https://raw.githubusercontent.com/api-evangelist/factris/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,12 +30,44 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
+- Fintech
+- Factoring
+- Invoice Financing
+- Working Capital
+- SME Finance
+- Debtor Management
+- Credit Insurance
+- Europe
 apis: []
+common:
+- type: DomainSecurity
+  url: security/factris-domain-security.yml
+- type: Website
+  url: https://www.factris.com/en/
+- type: SignUp
+  url: https://www.factris.com/en/apply-for-invoice-factoring/
+- type: Login
+  url: https://app.factris.com/login
+- type: Blog
+  url: https://www.factris.com/en/blog/
+- type: Support
+  url: https://www.factris.com/en/support-faq/
+- type: HelpCenter
+  url: https://www.factris.com/en/knowledge-base/
+- type: TermsOfService
+  url: https://www.factris.com/en/terms-of-use/
+- type: PrivacyPolicy
+  url: https://www.factris.com/en/privacy-policy/
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
